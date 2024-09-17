@@ -1,0 +1,39 @@
+
+<html>
+<head>
+
+<script language="javascript">
+function validate()
+{
+  
+
+  var x=f1.t1.value;
+  var y=f1.t2.value;
+  var re=/\d|\W|_/g;
+  
+  if(x==''||y=='')
+       window.alert("Enter both user id and password");
+   else if(x.length<6||y.length<6)
+       window.alert("both user id and password should greater than or equal to 6");
+   else if((re.test(x)))
+        window.alert("user name show3uld be alphabets");
+   else
+       window.alert("welcome"+" Mr."+x); 
+
+
+}
+
+</script>
+</head>
+<body bgcolor="green">
+<form name="f1">
+<center>
+User Name<input type="text" name="t1"><br><br>
+Password <input type="password" name="t2"><br><br>
+<input type="submit" value="submit" onClick=validate()>
+<input type="reset" value="reset">
+</center>
+</form>
+</body>
+
+</html> 
